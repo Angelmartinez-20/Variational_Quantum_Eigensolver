@@ -85,7 +85,7 @@ def vqeSolver(qubit_op, num_particles, num_spin_orbitals, problem, converter):
 # Graphs The Energy Levels Found At Each Distance #
 #=================================================#
 def graphResults(distances, exact_energies, vqe_energies):
-    plt.title("Grond State Energy Levels of Lithium Hydride (LiH)")
+    plt.title("Grond State Energy Levels of Hydrogen (H2)")
     plt.plot(distances, exact_energies, label = "Exact Energy", marker = 'o', color = "#00ace6")
     plt.plot(distances, vqe_energies, 'x', label = "VQE Energy", color = "red")
     plt.xlabel("Atomic Distance (Angstrom)")
